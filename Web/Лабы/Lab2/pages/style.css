@@ -1,0 +1,119 @@
+/* style.css */
+
+/* Глобальные стили для всей страницы */
+body {
+    font-family: JESTER, sans-serif;
+    background-color: #cfcdcd;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Стили для заголовков */
+h1 {
+    color: #502c2c;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Стили для параграфов */
+p {
+    font-size: 18px;
+    line-height: 1.6; /* Межстрочный интервал */
+    text-align: center;
+}
+
+/* Стили для ссылок */
+a {
+    color: #310404;
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+a:hover {
+    color: #220101;
+    text-decoration: underline; /* Подчеркиваем при наведении */
+}
+
+/* Стили для картинок */
+img {
+    max-width: 100%;   /* Картинка не вылезает за пределы экрана */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Тень */
+}
+
+/* Стили для формы */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Стили для полей ввода */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Важно: padding не увеличивает ширину */
+}
+
+input:focus {
+    border-color: #310404;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52,152,219,0.3);
+}
+
+/* Стили для кнопки */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #440606;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+button:hover {
+    background-color: #610909;
+}
+
+/* Стили для контейнера (например, на странице content.html) */
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Центрируем контейнер */
+    padding: 20px;
+}
+
+/* Стили для ссылок в навигации */
+.nav-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    background-color: #440606;
+    color: white;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #610909;
+    text-decoration: none;
+}
