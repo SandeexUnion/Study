@@ -1,0 +1,13 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: laravel_app_lab3
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./:/var/www/html
+            - /var/www/html/vendor
+        working_dir: /var/www/html
+        command: php -S 0.0.0.0:8000 -t public
